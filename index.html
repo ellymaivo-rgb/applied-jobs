@@ -7,15 +7,15 @@
 <style>
   * { box-sizing: border-box; }
   body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; margin: 0; background: #f4f6f8; color: #1a1a1a; }
-  header { background: #131921; color: #fff; padding: 28px 20px; }
+  header { background: #347DA2; color: #fff; padding: 28px 20px; }
   header h1 { margin: 0 0 6px; font-size: 24px; }
-  header p { margin: 4px 0; color: #d5d9d9; font-size: 14px; line-height: 1.5; }
-  header .badge { display: inline-block; background: #febd69; color: #131921; font-weight: 700; font-size: 12px; padding: 3px 10px; border-radius: 20px; margin-top: 8px; }
+  header p { margin: 4px 0; color: #d6eaf5; font-size: 14px; line-height: 1.5; }
+  header .badge { display: inline-block; background: #ffffff; color: #16405b; font-weight: 700; font-size: 12px; padding: 3px 10px; border-radius: 20px; margin-top: 8px; }
   main { max-width: 920px; margin: 0 auto; padding: 20px 16px 60px; }
   .controls { display: flex; flex-wrap: wrap; gap: 10px; margin: 8px 0 16px; align-items: center; }
   #search { flex: 1; min-width: 220px; padding: 11px 14px; border: 1px solid #ccc; border-radius: 8px; font-size: 15px; }
   .chip { border: 1px solid #888c8c; background: #fff; border-radius: 20px; padding: 8px 14px; font-size: 14px; cursor: pointer; }
-  .chip.active { background: #131921; color: #fff; border-color: #131921; }
+  .chip.active { background: #347da2; color: #fff; border-color: #347da2; }
   .stats { font-size: 14px; color: #565959; margin: 0 0 12px; }
   .card { background: #fff; border: 1px solid #d5d9d9; border-radius: 12px; padding: 18px; margin-bottom: 14px; box-shadow: 0 1px 3px rgba(0,0,0,.08); }
   .card h2 { margin: 0 0 4px; font-size: 18px; }
@@ -23,9 +23,9 @@
   .flag { background: #fef3c7; border: 1px solid #f59e0b; border-radius: 8px; padding: 10px 12px; font-size: 14px; margin: 10px 0; }
   .buttons { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 12px; }
   .btn { display: inline-block; padding: 10px 16px; border-radius: 8px; font-size: 14px; font-weight: 600; text-decoration: none; cursor: pointer; border: none; }
-  .btn-applied { background: #ff9900; color: #131921; }
-  .btn-resume { background: #131921; color: #fff; }
-  .btn-ghost { background: #fff; color: #131921; border: 1px solid #888c8c; }
+  .btn-applied { background: #347da2; color: #fff; }
+  .btn-resume { background: #16405b; color: #fff; }
+  .btn-ghost { background: #fff; color: #16405b; border: 1px solid #888c8c; }
   .reviewed { opacity: .75; }
   .reviewed h2::after { content: "  ✓ Reviewed"; color: #067d62; font-size: 14px; }
   footer { max-width: 920px; margin: 0 auto; padding: 0 16px 40px; font-size: 13px; color: #565959; line-height: 1.6; }
@@ -100,15 +100,15 @@
 </div>
 </article>
 </div>
-<section id="value-adder" style="background:#131921;color:#fff;border-radius:12px;padding:22px;margin:24px 0 8px;">
-  <p style="margin:0 0 6px;color:#febd69;font-weight:700;font-size:13px;letter-spacing:.08em;">IN ORDER TO BECOME THE VALUE ADDER FOR APPLIED MATERIALS</p>
+<section id="value-adder" style="background:#16405b;color:#fff;border-radius:12px;padding:22px;margin:24px 0 8px;">
+  <p style="margin:0 0 6px;color:#8ec6e8;font-weight:700;font-size:13px;letter-spacing:.08em;">IN ORDER TO BECOME THE VALUE ADDER FOR APPLIED MATERIALS</p>
   <h2 style="margin:0 0 10px;font-size:22px;line-height:1.3;">I don&apos;t just apply to Applied Materials. I wrote a practitioner manual on landed-cost drivers.</h2>
   <p style="line-height:1.65;color:#e5e7eb;margin:0 0 14px;">When a customer pays for a product, they pay the <strong>landed cost</strong> — not just the factory price. I authored <em>Global Logistics: From Sourcing to Shipping</em>, a practitioner manual on landed-cost reduction, built from visits to 16 manufacturing sites across 4 Asian markets. It breaks landed cost into its real drivers, and I applied the framework to a simulated $10,000+ cross-border transaction to evaluate them. Getting landed cost right is how a team protects the customer: lower cost, fewer surprises, faster and more reliable delivery.</p>
   <div style="display:flex;flex-wrap:wrap;gap:10px;margin:0 0 14px;">
-    <button class="chip driver" data-driver="freight" style="background:#febd69;border-color:#febd69;color:#131921;">Freight</button>
-    <button class="chip driver" data-driver="duties" style="background:#fff;border-color:#fff;color:#131921;">Duties</button>
-    <button class="chip driver" data-driver="insurance" style="background:#fff;border-color:#fff;color:#131921;">Insurance</button>
-    <button class="chip driver" data-driver="handling" style="background:#fff;border-color:#fff;color:#131921;">Handling</button>
+    <button class="chip driver" data-driver="freight" style="background:#347da2;border-color:#347da2;color:#fff;">Freight</button>
+    <button class="chip driver" data-driver="duties" style="background:#fff;border-color:#fff;color:#16405b;">Duties</button>
+    <button class="chip driver" data-driver="insurance" style="background:#fff;border-color:#fff;color:#16405b;">Insurance</button>
+    <button class="chip driver" data-driver="handling" style="background:#fff;border-color:#fff;color:#16405b;">Handling</button>
   </div>
   <p id="driver-text" style="background:rgba(255,255,255,.08);border-radius:8px;padding:12px 14px;line-height:1.6;margin:0 0 16px;">Tap a driver above. <strong>Freight:</strong> the cost of moving the product by air, sea, rail, or road — the biggest swing in what a customer finally pays, and the first place a good plan saves money.</p>
   <div style="display:flex;flex-wrap:wrap;gap:18px;align-items:flex-start;">
@@ -130,8 +130,8 @@
   document.querySelectorAll(".driver").forEach(function(btn){
     btn.addEventListener("click", function(){
       document.getElementById("driver-text").innerHTML = texts[btn.dataset.driver];
-      document.querySelectorAll(".driver").forEach(function(b){ b.style.background="#fff"; b.style.borderColor="#fff"; });
-      btn.style.background="#febd69"; btn.style.borderColor="#febd69";
+      document.querySelectorAll(".driver").forEach(function(b){ b.style.background="#fff"; b.style.borderColor="#fff"; b.style.color="#16405b"; });
+      btn.style.background="#347da2"; btn.style.borderColor="#347da2"; btn.style.color="#fff";
     });
   });
 })();
